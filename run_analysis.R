@@ -69,13 +69,15 @@ colnames(activity_labels) <- c("activity_ID", "activity_name")
 finalset  <- merge(finalset, activity_labels, by = "activity_ID")
 
 # Step 4 
-# Label data with descriptive variable names
+# Label data with descriptive variablce names
 
 colnames <- colnames(finalset); 
 
 # Change the column names to more descriptive ones over the column names vector
 colnames <- gsub('-mean', ' Mean', colnames)
 colnames <- gsub('-std', ' Std', colnames)
+colnames <- gsub('^t', 'Time', colnames)
+colnames <- gsub('^f', 'Freq', colnames)
 colnames <- gsub('[()]', '', colnames)
 
 # Update the final set column names with the more descriptive ones
