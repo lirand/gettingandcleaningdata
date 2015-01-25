@@ -84,6 +84,7 @@ colnames <- gsub('[()]', '', colnames)
 colnames(finalset) <- colnames
 
 # Step 5 
+# create a new tidy dataset with the average of each variable for each activity and each subject.
 
 # Aggregate the average for each activity and each subject 
 tidyset <- aggregate(finalset[,names(finalset) != c('activity_ID','subject_ID')],by=list(activityID=finalset$activity_ID,subjectID = finalset$subject_ID),mean);
@@ -91,4 +92,4 @@ tidyset <- aggregate(finalset[,names(finalset) != c('activity_ID','subject_ID')]
 # remove the last colums as it's meaninigless
 tidyset = tidyset[-c(69)]
 
-write.table(tidyset, './tidyset.txt', row.names=TRUE, col.names = FALSE, sep = '\t' );
+write.table(tidyset, './tidyset.txt', row.names = FALSE, col.names = TRUE, sep = '\t' );
