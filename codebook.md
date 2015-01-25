@@ -20,7 +20,6 @@ In this project we have chosen estimated STD and MEAN values for each group of s
 				5 STANDING
 				6 LAYING              
 * subjectID  - subect of the measuring. Each number describes a person.               
-#### List of measurements
 * tBodyAcc Mean-X           
 * tBodyAcc Mean-Y          
 * tBodyAcc Mean-Z           
