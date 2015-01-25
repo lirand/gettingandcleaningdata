@@ -1,16 +1,16 @@
-# Getting and Cleanning data, final course porject
+## Getting and Cleanning data, final course porject
 
-## Overview
+### Overview
 
 This repo indluces the final project code for the course. The target of this code is to take the supplied raw data, and turn it into 
 a tidy dataset. A tidy data set consists of aggregated data for each combination of subject and acticity. The result are the means of every variable that exposed STD or MEAN data. 
 
-## Raw data
-Raw data consists of 561 variables, measured for 30 subjects doing 6 different activities. The raw data and the different variables are explained in the codebook.R file.
+### Raw data
+Raw data consists of 561 variables, measured for 30 subjects doing 6 different activities using the accelerometers of Samsung smartphone. The raw data and the different variables are explained in the codebook.md file.
 
-## How the script works:
+### How the script works:
 
-The script is divided to 5 parts, each of them is supposed to handle a set of actions that needed for getting to the tidy dataset.
+The script is divided to 5 parts, each of them is supposed to handle a set of actions that are needed for creating the tidy dataset.
 :
 * 1. Merge the training and the test sets to create one data set.
 * 2. Extract only the measurements on the mean and standard deviation for each measurement. 
